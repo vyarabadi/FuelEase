@@ -14,6 +14,7 @@
 		C82EF2BB2AE8481500AAFBB9 /* homeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82EF2BA2AE8481500AAFBB9 /* homeTests.swift */; };
 		C82EF2C52AE8481500AAFBB9 /* homeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82EF2C42AE8481500AAFBB9 /* homeUITests.swift */; };
 		C82EF2C72AE8481500AAFBB9 /* homeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82EF2C62AE8481500AAFBB9 /* homeUITestsLaunchTests.swift */; };
+		C82EF2E92AE85B2600AAFBB9 /* AbhayaLibre-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C82EF2E82AE85B2600AAFBB9 /* AbhayaLibre-ExtraBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		C82EF2C02AE8481500AAFBB9 /* homeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = homeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C82EF2C42AE8481500AAFBB9 /* homeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeUITests.swift; sourceTree = "<group>"; };
 		C82EF2C62AE8481500AAFBB9 /* homeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C82EF2E72AE85A4F00AAFBB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C82EF2E82AE85B2600AAFBB9 /* AbhayaLibre-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AbhayaLibre-ExtraBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +97,10 @@
 		C82EF2A82AE8481300AAFBB9 /* home */ = {
 			isa = PBXGroup;
 			children = (
-				C82EF2A92AE8481300AAFBB9 /* homeApp.swift */,
+				C82EF2E72AE85A4F00AAFBB9 /* Info.plist */,
+				C82EF2E42AE858A800AAFBB9 /* Font */,
 				C82EF2AB2AE8481300AAFBB9 /* ContentView.swift */,
+				C82EF2A92AE8481300AAFBB9 /* homeApp.swift */,
 				C82EF2AD2AE8481400AAFBB9 /* Assets.xcassets */,
 				C82EF2AF2AE8481400AAFBB9 /* Preview Content */,
 			);
@@ -125,6 +130,14 @@
 				C82EF2C62AE8481500AAFBB9 /* homeUITestsLaunchTests.swift */,
 			);
 			path = homeUITests;
+			sourceTree = "<group>";
+		};
+		C82EF2E42AE858A800AAFBB9 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				C82EF2E82AE85B2600AAFBB9 /* AbhayaLibre-ExtraBold.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +246,7 @@
 			files = (
 				C82EF2B12AE8481400AAFBB9 /* Preview Assets.xcassets in Resources */,
 				C82EF2AE2AE8481400AAFBB9 /* Assets.xcassets in Resources */,
+				C82EF2E92AE85B2600AAFBB9 /* AbhayaLibre-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +438,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"home/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = home/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +467,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"home/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = home/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
