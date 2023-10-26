@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C82174292AE9B39800E7EC38 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82174282AE9B39800E7EC38 /* Settings.swift */; };
 		C82EF2AA2AE8481300AAFBB9 /* homeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82EF2A92AE8481300AAFBB9 /* homeApp.swift */; };
 		C82EF2AC2AE8481300AAFBB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82EF2AB2AE8481300AAFBB9 /* ContentView.swift */; };
 		C82EF2AE2AE8481400AAFBB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82EF2AD2AE8481400AAFBB9 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C82174282AE9B39800E7EC38 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		C82EF2A62AE8481300AAFBB9 /* home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = home.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C82EF2A92AE8481300AAFBB9 /* homeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeApp.swift; sourceTree = "<group>"; };
 		C82EF2AB2AE8481300AAFBB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C82174272AE9B38500E7EC38 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C82174282AE9B39800E7EC38 /* Settings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		C82EF29D2AE8481300AAFBB9 = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +109,8 @@
 			children = (
 				C82EF2E72AE85A4F00AAFBB9 /* Info.plist */,
 				C82EF2E42AE858A800AAFBB9 /* Font */,
-				C82EF2AB2AE8481300AAFBB9 /* ContentView.swift */,
-				C82EF2A92AE8481300AAFBB9 /* homeApp.swift */,
+				C82174272AE9B38500E7EC38 /* Settings */,
+				C8F0C02C2AE9AC1500797B30 /* Homepage */,
 				C82EF2AD2AE8481400AAFBB9 /* Assets.xcassets */,
 				C82EF2AF2AE8481400AAFBB9 /* Preview Content */,
 			);
@@ -138,6 +148,15 @@
 				C82EF2E82AE85B2600AAFBB9 /* AbhayaLibre-ExtraBold.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		C8F0C02C2AE9AC1500797B30 /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				C82EF2AB2AE8481300AAFBB9 /* ContentView.swift */,
+				C82EF2A92AE8481300AAFBB9 /* homeApp.swift */,
+			);
+			path = Homepage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C82174292AE9B39800E7EC38 /* Settings.swift in Sources */,
 				C82EF2AC2AE8481300AAFBB9 /* ContentView.swift in Sources */,
 				C82EF2AA2AE8481300AAFBB9 /* homeApp.swift in Sources */,
 			);
@@ -436,6 +456,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"home/Preview Content\"";
+				DEVELOPMENT_TEAM = GKDWD35Q7P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = home/Info.plist;
@@ -465,6 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"home/Preview Content\"";
+				DEVELOPMENT_TEAM = GKDWD35Q7P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = home/Info.plist;
