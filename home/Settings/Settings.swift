@@ -1,17 +1,16 @@
 import SwiftUI
 
 struct Settings: View {
-    @State private var activeSection: ActiveSection = .home
+    @State private var activeSection: ActiveSection = .Settings
     @State private var isNavigating: Bool = false
     @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
  
     enum ActiveSection: String {
-        case home, car, clipboard, map, bell
+        case home, car, clipboard, map, bell, Settings
     }
     
     var body: some View {
-        NavigationView{
-            // Main content (Settings Page)
+
             ZStack {
                 Color(.backgound) 
                     .ignoresSafeArea()
@@ -40,25 +39,7 @@ struct Settings: View {
                         .padding(.top, 125)
                     
                     Spacer()
-                               .navigationBarBackButtonHidden(true)
-                           .toolbar(content: {
-                               ToolbarItem (placement: .navigationBarLeading)  {
-                                        
-                                   Button(action: {
-                                       presentationMode.wrappedValue.dismiss()
-                                   }, label: {
-                                     Image(systemName: "arrow.left")
-                                       //Image(systemName: "house.fill")
-                                       .foregroundColor(.text)
-                                       Text("home")
-                                           .foregroundColor(.text)
-                                           .font(.custom("AbhayaLibre-ExtraBold", size: 22))
-                                          
-                                   })
-                                   
-                             
-                               }
-                               })
+
                 }
                 
                 VStack(spacing:20) {
@@ -94,9 +75,10 @@ struct Settings: View {
                                 .shadow(radius: 5))})
                     Button(action: {}, label: {
                         HStack{
-                            Image(systemName: "questionmark.circle")
-                                .offset(x:-30)
-                            Text("Help Support")}
+                            NavigationLink(destination: HelpSupport()) {
+                                Image(systemName: "questionmark.circle")
+                                    .offset(x:-30)
+                                Text("Help Support")}}
                         .font(.custom("AbhayaLibre-ExtraBold", size: 22))
                         .padding()
                         .padding(.horizontal, 43)
@@ -132,7 +114,7 @@ struct Settings: View {
     
 
     
-}
+
 #Preview {
     Settings()
 }
