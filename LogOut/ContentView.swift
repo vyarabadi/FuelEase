@@ -11,24 +11,16 @@ struct ContentView: View {
     var body: some View {
         ZStack{
             Color(.accent).edgesIgnoringSafeArea(.all)
-        
-        /*ZStack {
-        RoundedRectangle(cornerRadius: 63)
-        .frame(width: 390, height: 693)
-        .foregroundColor(Color(red: 0.98, green: 0.953, blue: 0.941))
-        .overlay(
-        RoundedRectangle(cornerRadius: 63)
-        .stroke(Color(red: 0.451, green: 0.235, blue: 0.149), lineWidth: 3))
-        .shadow(color: Color(red: 0.98, green: 0.953, blue: 0.941), radius: 4, x: 0, y: 4)
-                        
-        RoundedRectangle(cornerRadius: 63)
-        .frame(width: 390, height: 693)
-        .clipped()
-         }
-        .frame(height: 693)
-        .padding(.top, 201)
-            */
             
+            
+            Image("Image") // Assuming you have "Logo.png" in your project
+                .resizable()
+                .scaledToFill()
+                .frame(width: 120, height: 185)
+                .offset(x: 5, y: 33)
+                .padding(.bottom, 640)
+                
+        
         Rectangle()
         .frame(width: 400, height: 600)
         .foregroundColor(Color(red: 0.98, green: 0.953, blue: 0.941))
@@ -69,6 +61,7 @@ struct ContentView: View {
         }
     }
 }
+
 
 struct LogoutScreen_Previews: PreviewProvider {
     static var previews: some View {
